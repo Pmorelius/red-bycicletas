@@ -27,11 +27,12 @@ exports.bicicleta_update_post = function(req,res){
     bici.id = req.body.id;
     bici.color = req.body.color;
     bici.modelo = req.body.modelo;
-    bici.ubicacion = [req.body.lat,req.body.lng];
+    bici.ubicacion = [req.body.lat, req.body.lng];
     res.redirect('/bicicletas');
 }
 
 exports.bicicleta_delete_post = function(req,res) {
     Bicicleta.removeById(req.body.id);
+    
     res.redirect('/bicicletas');
 }
