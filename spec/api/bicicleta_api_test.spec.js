@@ -3,7 +3,7 @@ var Bicicleta = require('../../models/bicicleta');
 var server = require('../../bin/www');
 var request = require('request');
 
-
+var base_url = "http://localhost:5000/api/bicicletas";
 
 
 describe('Bicicletas API', ()=>{
