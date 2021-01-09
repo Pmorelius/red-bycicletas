@@ -13,8 +13,8 @@ $.ajax({
 		result.bicicletas.forEach(function(bici){
 			L.marker(bici.ubicacion, {title: bici.id}).addTo(map);
 		});
-	} 
-})
+	}, 
+});
 
 
 
